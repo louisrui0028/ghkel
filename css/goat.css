@@ -1,0 +1,133 @@
+/* 전체 요소의 기본 여백을 제거하고 박스 크기 계산 방을 통일 */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* 유명 드러머 페이지 전체 배경색, 글꼴, 글자색 설정 */
+body {
+  background-color:#E8DCCB;
+  font-family:Arial,sans-serif;
+  color: #2B2B2B;
+}
+
+/*가운데 정렬 */
+main {
+  text-align:center;
+  margin: 0 auto;
+}
+
+/*페이지 제목*/
+h1 {
+  margin-top: 40px;
+  text-align: center;
+  font-size:48px;
+  color:#4A3F35;
+  letter-spacing: 4px;
+}
+
+/*타이틀 라인*/
+.title-line {
+  width: 110px;
+  height: 4px;
+  background-color: #4A3F35;
+  margin: 18px auto 40px;
+}
+/*드러머 카드 3개 가로로 배치하는 영역*/
+.drummer-container{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  margin-bottom:60px;
+}
+
+/*유명 드러머 카드 */
+.drummer-card{
+  width:340px;
+  border:2px solid #4A3F35;
+  background:white;
+  border-radius:12px;
+  padding:25px;
+  transition:0.3s;
+}
+
+/*유명 드러머카드 호버 효과*/
+.drummer-card:hover{
+    transform:scale(1.1);
+}
+
+/* 드러머 사진 크기, 모양*/
+.drummer-card img{
+  width:180px;
+  height:180px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+/*카드 제목*/
+.drummer-card h2{
+  color:#4A3F35;
+  margin-bottom:15px;
+}
+
+/* 카드 설명*/
+.drummer-card p{
+  line-height:28px;
+  margin-bottom:15px;
+}
+
+/*대표 연주 영상 링크 카드 영역*/
+.video-section{
+    width:1200px;
+    margin:0 auto 40px;
+    border:2px solid #4A3F35;
+    border-radius:12px;
+    background:white;
+    padding:30px;
+}
+
+/*대표 연주 영상*/
+.video-section h2{
+    color:#4A3F35;
+    margin-bottom:30px;
+}
+
+/*카드 가로로 배치*/
+.video-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+/*드러머 연주 영상카드 */
+.video-card{
+    width:300px;
+    border:2px solid #4A3F35;
+    border-radius:10px;
+    padding:20px;
+}
+
+/*드러머 이름*/
+.video-card h3{
+    color:#4A3F35;
+    margin-bottom:15px;
+}
+
+/* 유튜브 영상링크*/
+.video-card a{
+    display:inline-block;
+    padding:10px 20px;
+    background:#4A3F35;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+/*영상링크 호버 효과 */
+.video-card a:hover{
+    transform:scale(1.1);
+    background:#C95F28;
+}

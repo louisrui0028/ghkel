@@ -1,0 +1,150 @@
+/*전체여백 제거, 박스크기 계산 방삭 통일*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*배경색, 글꼴, 글자색*/
+body {
+    background-color: #E8DCCB;
+    font-family: Arial, sans-serif;
+    color: #2B2B2B;
+}
+
+/*가운데 정렬 */
+main {
+    text-align:center;
+    margin: 0 auto;
+}
+
+/* 페이지 제목*/
+h1 {
+    margin-top: 40px;
+    text-align: center;
+    font-size:48px;
+    color:#4A3F35;
+    letter-spacing: 4px;
+}
+
+/*타이틀 라인*/
+.title-line {
+    width: 110px;
+    height: 4px;
+    background-color: #4A3F35;
+    margin: 18px auto 40px;
+}
+
+/*역사 카드들 배치 영역*/
+.history-container {
+    display:flex;
+    justify-content:center;
+    gap:100px;
+    margin-bottom:40px;
+}
+
+/*역사 카드 */
+.history-box {
+    width:240px;
+    height:340px;
+    border:2px solid #4A3F35;
+    background:white;
+    padding: 30px;
+    text-align:center;
+    border-radius:12px;
+    transition: 0.3s;
+}
+/*역사카드 호버 효과*/
+.history-box:hover{
+    transform:translateY(-6px);
+}
+
+/*역사 카드 제목*/
+.history-box h2 {
+    margin: 10px auto 28px ;
+}
+
+/*역사 설명*/
+.history-box p{
+    line-height:30px;
+    font-size:17px;
+    margin-bottom:50px;
+    font-weight: bold;
+}
+
+/*타임라인 영역*/
+.history-timeline {
+    width:1500px;
+    margin:10px auto 60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* 타임라인 원*/
+.timeline-circle {
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    border:3px solid #4A3F35;
+    background:#E8DCCB;
+}
+
+/* 타임라인 선 */
+.timeline-bar {
+    width: 326px;
+    height:3px;
+    background:#4A3F35;
+}
+
+/*하단 역사카드*/
+.history-bottom {
+    width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:2px solid #4A3F35;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    margin-bottom: 20px;
+
+}
+
+/*하단 역사카드 텍스트 영역*/
+.history-text{
+    width:60%;
+}
+
+/*하단카드 제목 */
+.history-text h2 {
+    margin-bottom:30px;
+}
+
+/*하단카드 설명*/
+.history-text p{
+    line-height:35px;
+    font-size:17px;
+    font-weight: bold;
+}
+
+/*하단 드럼 이미지 영역*/
+.history-image {
+    width:350px;
+    height:180px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/*하단 이미지 크기*/
+.history-image img {
+    width:70%;
+    transition: 0.3s;
+}
+
+/* 하단 이미지 호버 효과*/
+.history-image img:hover{
+    transform: scale(1.1);
+}
